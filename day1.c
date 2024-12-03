@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-// #include <iostream>
 
 void sort(int* list, int len) {
     int tmp;
@@ -31,7 +30,6 @@ int main() {
     int* list0 = lists[0];
     int* list1 = lists[1];
 
-    
     char line[15];  // lines will match /\d{5}\s{3}\d{5}\n/, which is 14 characters, add one for the \0
 
     // Read input line by line
@@ -53,8 +51,6 @@ int main() {
     sort(list0, idx);
     printf("sorting list 1\n");
     sort(list1, idx);
-
-
     
     printf("sorted lists\n");
     int distance = 0;
